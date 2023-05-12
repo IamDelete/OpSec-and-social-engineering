@@ -1,0 +1,53 @@
+.body_main {
+    font-family: Consolas, Courier, monospace;
+    letter-spacing: 1px;
+    color: #39FF14;
+    background-color: #333;
+    padding: 10px;
+}
+
+
+.button_opsec {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+    height: 100px;
+}
+
+/*animation title*/
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.typing-text {
+    overflow: hidden;
+    animation: typing 1s steps(30, end);
+    border-right: 2px solid #fff;
+    color: #39FF14;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 40%
+    }
+}
