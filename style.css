@@ -144,3 +144,14 @@ html {
     vertical-align: middle;
     margin-left: 50%;
 }
+
+nav {
+    background-color: rgb(8, 4, 20);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav h3 {
+    margin-left: 10px;
+}
