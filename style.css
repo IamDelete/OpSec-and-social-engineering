@@ -1,36 +1,30 @@
+/* Set the font family, letter spacing, text color, and background color for the entire page */
 .body_main {
-    font-family: Consolas, Courier, monospace;
+    font-family: monospace;
     letter-spacing: 1px;
     color: #39FF14;
-    background-color: #333;
+    background-color: black;
     padding: 10px;
+    margin: 0;
+    padding: 0;
 }
 
-
-.button_opsec {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 20%;
-    height: 100px;
+html {
+    margin: 0;
+    padding: 0;
 }
 
-/*animation title*/
-
+/* Set up the container for the title animation */
 .title-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* Set the height of the container to be 100% of the viewport height */
+    background-color: black;
 }
 
+/* Style the text for the title animation */
 .typing-text {
     overflow: hidden;
     animation: typing 1s steps(30, end);
@@ -42,6 +36,7 @@
     margin-top: 20px;
 }
 
+/* Define the typing animation */
 @keyframes typing {
     from {
         width: 0
@@ -50,4 +45,101 @@
     to {
         width: 40%
     }
+}
+
+/* Remove the default margins and paddings added by the browser */
+
+
+/*button1 */
+/* Set the font family, letter spacing, text color, and background color for the entire page */
+.body_main {
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: #39FF14;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up the container for the title animation */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set the height of the container to be 100% of the viewport height */
+    background-color: black;
+}
+
+/* Style the text for the title animation */
+.typing-text {
+    overflow: hidden;
+    animation: typing 1s steps(30, end);
+    border-right: 2px solid #fff;
+    color: #39FF14;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+/* Define the typing animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 40%
+    }
+}
+
+/* Remove the default margins and paddings added by the browser */
+
+
+/*button1 */
+.button_opsec_container {
+    padding: 10px;
+
+}
+
+.button_opsec {
+    background-color: rgb(44, 146, 146, 1);
+    color: #39FF14;
+    width: 20%;
+    height: 20cm;
+    display: inline-block;
+    font-size: 300%;
+    border-radius: 2%;
+    margin-right: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*button2*/
+.button_se_container {
+    padding: 10px;
+    float: right;
+}
+
+.button_se {
+    background-color: rgb(44, 146, 146, 1);
+    color: #39FF14;
+    width: 20%;
+    height: 20cm;
+    display: inline-block;
+    font-size: 300%;
+    border-radius: 2%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
 }
