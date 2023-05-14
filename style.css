@@ -106,18 +106,18 @@ html {
 /*button1 */
 .button_opsec_container {
     padding: 10px;
-
+    display: flex;
 }
 
 .button_opsec {
     background-color: rgb(44, 146, 146, 1);
     color: #39FF14;
-    width: 20%;
-    height: 20cm;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
     display: inline-block;
     font-size: 300%;
     border-radius: 2%;
-    margin-right: 50%;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -127,19 +127,20 @@ html {
 /*button2*/
 .button_se_container {
     padding: 10px;
-    float: right;
+    display: flex;
 }
 
 .button_se {
     background-color: rgb(44, 146, 146, 1);
     color: #39FF14;
-    width: 20%;
-    height: 20cm;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
     display: inline-block;
     font-size: 300%;
     border-radius: 2%;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-
+    margin-left: 50%;
 }
