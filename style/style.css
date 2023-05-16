@@ -128,18 +128,31 @@ nav h3 {
     margin-left: 10px;
 }
 
-#wrapper {
+.wrapper {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
 }
 
-#box {
+.box {
     width: 90%;
     background-color: #0D1117;
-    height: 400px;
+    height: fit-content;
     border-radius: 20px;
     border: 0.5px #202225 solid;
+    padding: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.box h2 {
+    font-size: 40px;
+    color:#39FF14;
+    text-indent: 100px;
+}
+
+.box p {
+    text-indent: 36px;
+    color:whitesmoke;
+    font-size: 20px;
 }
