@@ -3,10 +3,9 @@
     font-family: monospace;
     letter-spacing: 1px;
     color: #39FF14;
-    background-color: black;
+    background-color: rgb(8, 4, 20);
     padding: 10px;
     margin: 0;
-    padding: 0;
 }
 
 html {
@@ -43,16 +42,15 @@ html {
     }
 
     to {
-        width: 40%
+        width: 30%
     }
 }
 
 /*button1 */
 .button_opsec_container {
-    padding: 10px;
     display: flex;
     overflow: hidden;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #39FF14;
 }
 
 .button_opsec {
@@ -70,9 +68,12 @@ html {
 }
 
 .text-hidden {
-    animation: typing 1s steps(50, end);
-    font-size: xx-large;
+    animation: typing 2s steps(20, end);
+    font-size: x-large;
     display: none;
+    position: sticky;
+    color: #39FF14;
+    padding: 10px;
 
 }
 
@@ -82,7 +83,6 @@ html {
 
 /*button2*/
 .button_se_container {
-    padding: 10px;
     display: flex;
 }
 
@@ -101,10 +101,21 @@ html {
     text-decoration: none;
 }
 
-.button_se:hover {
-    background-color: #fff;
+.button_se:hover+.text-hidden2 {
+    display: inline;
+    left: 0;
 }
 
+.text-hidden2 {
+    animation: typing 2s steps(20, end);
+    font-size: x-large;
+    display: none;
+    position: absolute;
+    color: #39FF14;
+    padding: 10px;
+    left: 0;
+    text-align: left;
+}
 
 
 nav {
