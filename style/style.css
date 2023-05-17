@@ -1,9 +1,10 @@
 /* Set the font family, letter spacing, text color, and background color for the entire page */
 .body_main {
-    font-family: monospace;
+    font: 1.3rem Inconsolata, monospace;
     letter-spacing: 1px;
     color: #39FF14;
     background-color: rgb(8, 4, 20);
+    text-shadow: 0 0 3px #C8C8C8;
     padding: 0px;
     margin: 0;
 }
@@ -80,6 +81,12 @@ nav h3 {
     border: 0.5px #202225 solid;
     padding: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: transform 0.5s ease;
+
+}
+.box:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(to right, rgba(14, 14, 14, 0.308), rgb(8, 4, 20));
 }
 
 .box h2 {
@@ -97,14 +104,14 @@ nav h3 {
 {
     color:#39FF14;
     font-size: xx-large;
-    font-family:monospace;
+    font: 1.3rem Inconsolata, monospace;
     text-decoration: none;
 }
 
 
 .title-op
 {
-    font-family: monospace;
+    font: 1.3rem Inconsolata, monospace;
     font-size:30px;
     text-align: center;
     
