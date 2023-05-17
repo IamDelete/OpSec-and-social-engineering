@@ -1,5 +1,41 @@
-/* Set the font family, letter spacing, text color, and background color for the entire page */
-.body_main {
+/*hovers*/
+
+.box:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(to right, rgba(14, 14, 14, 0.308), rgb(8, 4, 20));
+}
+.link-pg:hover
+{
+text-decoration:underline;
+}
+
+.home-button:hover
+{
+    transform: scale(1.05);
+}
+.yt-link:hover{
+    text-decoration:underline;
+
+}
+/* end hovers*/
+
+
+/*animation*/
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 30%
+    }
+}
+
+/*end animation*/
+
+/*universal atributes*/
+body {
     font: 1.3rem Inconsolata, monospace;
     letter-spacing: 1px;
     color: #39FF14;
@@ -14,7 +50,9 @@ html {
     padding: 0;
 }
 
-/* Set up the container for the title animation */
+/*end universnal atributes*/
+
+/*big titles*/
 .title-container {
     display: flex;
     justify-content: center;
@@ -24,7 +62,6 @@ html {
     background-color: rgb(8, 4, 20);
 }
 
-/* Style the text for the title animation */
 .typing-text {
     overflow: hidden;
     animation: typing 1s steps(30, end);
@@ -36,17 +73,25 @@ html {
     margin-top: 20px;
 }
 
-/* Define the typing animation */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 30%
-    }
+.title-op
+{
+    font: 1.3rem Inconsolata, monospace;
+    font-size:30px;
+    text-align: center;
+    
 }
 
+.sub-title
+{
+    font-size: 20px;
+    margin-top:10px;
+    margin-left:10px;
+}
+
+
+/*end big titles*/
+
+/*top terminal-like look*/
 nav {
     background-color: rgb(0, 0, 0);
     height: 40px;
@@ -57,7 +102,10 @@ nav {
 nav h3 {
     margin-left: 10px;
 }
+/* end top terminal-like look*/
 
+
+/*buttons/segemnts*/
 .wrapper {
     width: 100%;
     height: fit-content;
@@ -84,10 +132,6 @@ nav h3 {
     transition: transform 0.5s ease;
 
 }
-.box:hover {
-    transform: scale(1.05);
-    background-image: linear-gradient(to right, rgba(14, 14, 14, 0.308), rgb(8, 4, 20));
-}
 
 .box h2 {
     font-size: 40px;
@@ -100,46 +144,43 @@ nav h3 {
     color:whitesmoke;
     font-size: 20px;
 }
+/*end button/segments*/
+
+/*containers exept buttons/segments*/
+
+.cont-title-op
+{
+    text-align: center;
+    margin-left:38%;
+}
+.cont-title-op1
+{
+    text-align: center;
+    margin-left:32%;
+}
+
+/*end containers exept buttons/segments*/
+
+
+
+/*links*/
+.yt-link
+{
+    color:#39FF14;
+    text-decoration: none;
+}
 .link-pg
 {
     color:#39FF14;
     font-size: xx-large;
-    font: 1.3rem Inconsolata, monospace;
     text-decoration: none;
 }
 
+/*end links*/
 
-.title-op
-{
-    font: 1.3rem Inconsolata, monospace;
-    font-size:30px;
-    text-align: center;
-    
-}
-.cont-tile-op
-{
-    text-align: center;
-    margin-left:41%;
-}
-.cont-tile-op1
-{
-    text-align: center;
-    margin-left:36%;
-}
-.sub-title
-{
-    font-size: 20px;
-    margin-top:10px;
-    margin-left:10px;
-}
 .par-op
 {
     text-indent: 36px;
     color:whitesmoke;
     font-size: 20px;
-}
-.yt-link
-{
-    color:#39FF14;
-
 }
