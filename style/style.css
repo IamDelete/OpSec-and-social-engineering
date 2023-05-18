@@ -186,7 +186,7 @@ nav h3 {
 }
 
 
-/*test*/
+/*scroll bar*/
 ::-webkit-scrollbar {
     width: 8px;
   }
@@ -209,4 +209,4 @@ nav h3 {
   }
 
 
-/*end test*/
+/*end scroll bar*/
