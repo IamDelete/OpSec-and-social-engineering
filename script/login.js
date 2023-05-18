@@ -9,7 +9,7 @@ const form = document.getElementById('loginForm');
             let pass = password.value.trim();
         
             if (user !== '' && pass !== '') {
-                window.location.href = 'index.html';
+                window.location.href = 'index_main_page.html';
             } else {
                 username.classList.add('error');
                 password.classList.add('error');
