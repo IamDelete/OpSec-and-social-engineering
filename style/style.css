@@ -410,3 +410,47 @@ span {
     color: #39FF14;
     font-size: larger;
 }
+
+@media screen and (max-width: 480px) {
+    .typing-text {
+      font-size: 40px;
+    }
+  
+    .box {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0;
+    }
+  
+    .box h2 {
+      text-indent: 0;
+      font-size: 30px;
+    }
+  
+    .box p {
+      text-indent: 0;
+      font-size: 16px;
+    }
+  
+    .contactBox {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0;
+    }
+  
+    .contactBox h2 {
+      font-size: 20px;
+    }
+  
+    .contactBox p {
+      font-size: 14px;
+    }
+
+    .cerinta {
+        font-size: 20px;
+    }
+
+    .title-op {
+        display: none;
+    }
+  }
