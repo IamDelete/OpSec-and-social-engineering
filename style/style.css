@@ -210,3 +210,195 @@ nav h3 {
 
 
 /*end scroll bar*/
+/* Set the font family, letter spacing, text color, and background color for the entire page */
+.body_main {
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: #39FF14;
+    background-color: rgb(8, 4, 20);
+    padding: 10px;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up the container for the title animation */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set the height of the container to be 100% of the viewport height */
+    background-color: rgb(8, 4, 20);
+}
+
+/* Style the text for the title animation */
+.typing-text {
+    overflow: hidden;
+    animation: typing 1s steps(30, end);
+    border-right: 2px solid #fff;
+    color: #39FF14;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+/* Define the typing animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 30%
+    }
+}
+
+/*button1 */
+.button_opsec_container {
+    display: flex;
+    overflow: hidden;
+    border-right: 2px solid #39FF14;
+}
+
+.button_opsec {
+    background-color: rgb(44, 146, 146, 1);
+    color: #39FF14;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
+    display: inline-block;
+    font-size: 300%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.text-hidden {
+    animation: typing 2s steps(20, end);
+    font-size: x-large;
+    display: none;
+    color: #39FF14;
+    max-height: 300px;
+    max-width: 940.5px;
+}
+
+.button_opsec:hover+.text-hidden {
+    display: inline;
+}
+
+/*button2*/
+.button_se_container {
+    display: flex;
+}
+
+.button_se {
+    background-color: rgb(44, 146, 146, 1);
+    color: #39FF14;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
+    display: inline-block;
+    font-size: 300%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 50%;
+    text-decoration: none;
+}
+
+.button_se:hover+.text-hidden2 {
+    display: inline;
+    left: 0;
+}
+
+.text-hidden2 {
+    animation: typing 2s steps(20, end);
+    font-size: x-large;
+    display: none;
+    position: absolute;
+    color: #39FF14;
+    padding: 10px;
+    left: 0;
+    text-align: left;
+}
+
+
+nav {
+    background-color: rgb(8, 4, 20);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav h3 {
+    margin-left: 10px;
+}
+
+#wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#box {
+    width: 90%;
+    background-color: #0D1117;
+    height: 400px;
+    border-radius: 20px;
+    border: 0.5px #202225 solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#contactContainer {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contactBox {
+    background-color: #0D1117;
+    border-radius: 20px;
+    border: 0.5px #202225 solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 15px;
+    transition: transform 0.5s ease;
+}
+
+.contactBox h2 {
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.contactBox:hover {
+    background-image: linear-gradient(to right, rgba(14, 14, 14, 0.308), rgb(8, 4, 20));
+}
+
+.contactBox img {
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+.contactBox:hover img {
+    transform: translateY(-120%);
+}
+
+.contactBox:hover h2 {
+    opacity: 1;
+}
