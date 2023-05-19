@@ -4,19 +4,20 @@
     transform: scale(1.05);
     background-image: linear-gradient(to right, rgba(14, 14, 14, 0.308), rgb(8, 4, 20));
 }
-.link-pg:hover
-{
-text-decoration:underline;
+
+.link-pg:hover {
+    text-decoration: underline;
 }
 
-.home-button:hover
-{
+.home-button:hover {
     transform: scale(1.05);
 }
-.yt-link:hover{
-    text-decoration:underline;
+
+.yt-link:hover {
+    text-decoration: underline;
 
 }
+
 /* end hovers*/
 
 
@@ -28,7 +29,7 @@ text-decoration:underline;
     }
 
     to {
-        width: 30%
+        width: 24.5%
     }
 }
 
@@ -73,19 +74,17 @@ html {
     margin-top: 20px;
 }
 
-.title-op
-{
+.title-op {
     font: 1.3rem Inconsolata, monospace;
-    font-size:30px;
+    font-size: 30px;
     text-align: center;
-    
+
 }
 
-.sub-title
-{
+.sub-title {
     font-size: 20px;
-    margin-top:10px;
-    margin-left:10px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 
@@ -102,6 +101,7 @@ nav {
 nav h3 {
     margin-left: 10px;
 }
+
 /* end top terminal-like look*/
 
 
@@ -112,13 +112,13 @@ nav h3 {
     display: flex;
     justify-content: center;
 }
-.wrapper1
-{
+
+.wrapper1 {
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: center;
-    text-align: center;  
+    text-align: center;
 }
 
 .box {
@@ -135,28 +135,33 @@ nav h3 {
 
 .box h2 {
     font-size: 40px;
-    color:#39FF14;
+    color: #39FF14;
     text-indent: 100px;
 }
 
 .box p {
     text-indent: 36px;
-    color:whitesmoke;
+    color: whitesmoke;
     font-size: 20px;
 }
+
+.box h3 {
+    font-size: 20px;
+
+}
+
 /*end button/segments*/
 
 /*containers exept buttons/segments*/
 
-.cont-title-op
-{
+.cont-title-op {
     text-align: center;
-    margin-left:38%;
+    margin-left: 38%;
 }
-.cont-title-op1
-{
+
+.cont-title-op1 {
     text-align: center;
-    margin-left:32%;
+    margin-left: 32%;
 }
 
 /*end containers exept buttons/segments*/
@@ -164,23 +169,337 @@ nav h3 {
 
 
 /*links*/
-.yt-link
-{
-    color:#39FF14;
+.yt-link {
+    color: #39FF14;
     text-decoration: none;
 }
-.link-pg
-{
-    color:#39FF14;
+
+.link-pg {
+    color: #39FF14;
     font-size: xx-large;
     text-decoration: none;
 }
 
 /*end links*/
 
-.par-op
-{
+.par-op {
     text-indent: 36px;
-    color:whitesmoke;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #39FF14;
+    border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #39FF14;
+}
+
+
+/*end scroll bar*/
+/* Set the font family, letter spacing, text color, and background color for the entire page */
+.body_main {
+    font-family: monospace;
+    letter-spacing: 1px;
+    color: #39FF14;
+    background-color: rgb(8, 4, 20);
+    padding: 10px;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up the container for the title animation */
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set the height of the container to be 100% of the viewport height */
+    background-color: rgb(8, 4, 20);
+}
+
+/* Style the text for the title animation */
+.typing-text {
+    overflow: hidden;
+    animation: typing 1s steps(30, end);
+    border-right: 2px solid #fff;
+    color: #39FF14;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+/* Define the typing animation */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 30%
+    }
+}
+
+/*button1 */
+.button_opsec_container {
+    display: flex;
+    overflow: hidden;
+    border-right: 2px solid #39FF14;
+}
+
+.button_opsec {
+    background-color: rgb(44, 146, 146, 1);
+    color: #39FF14;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
+    display: inline-block;
+    font-size: 300%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.text-hidden {
+    animation: typing 2s steps(20, end);
+    font-size: x-large;
+    display: none;
+    color: #39FF14;
+    max-height: 300px;
+    max-width: 940.5px;
+}
+
+.button_opsec:hover+.text-hidden {
+    display: inline;
+}
+
+/*button2*/
+.button_se_container {
+    display: flex;
+}
+
+.button_se {
+    background-color: rgb(44, 146, 146, 1);
+    color: #39FF14;
+    width: 50%;
+    height: 300px;
+    line-height: 300px;
+    display: inline-block;
+    font-size: 300%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 50%;
+    text-decoration: none;
+}
+
+.button_se:hover+.text-hidden2 {
+    display: inline;
+    left: 0;
+}
+
+.text-hidden2 {
+    animation: typing 2s steps(20, end);
+    font-size: x-large;
+    display: none;
+    position: absolute;
+    color: #39FF14;
+    padding: 10px;
+    left: 0;
+    text-align: left;
+}
+
+
+nav {
+    background-color: rgb(8, 4, 20);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav h3 {
+    margin-left: 10px;
+}
+
+#wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+#box {
+    width: 90%;
+    background-color: #0D1117;
+    height: 400px;
+    border-radius: 20px;
+    border: 0.5px #202225 solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#contactContainer {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contactBox {
+    background-color: #0D1117;
+    border-radius: 20px;
+    border: 0.5px #202225 solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 15px;
+    transition: transform 0.5s ease;
+}
+
+.contactBox h2 {
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.contactBox:hover {
+    background-image: linear-gradient(to right, rgba(14, 14, 14, 0.308), rgb(8, 4, 20));
+}
+
+.contactBox img {
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+.contactBox:hover img {
+    transform: translateY(-120%);
+}
+
+.contactBox:hover h2 {
+    opacity: 1;
+}
+
+span {
+    color: #39FF14;
+    font-size: larger;
+}
+
+@media screen and (max-width: 480px) {
+    .typing-text {
+        font-size: 40px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .box h2 {
+        text-indent: 0;
+        font-size: 30px;
+    }
+
+    .box p {
+        text-indent: 0;
+        font-size: 16px;
+    }
+
+    .contactBox {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .contactBox h2 {
+        font-size: 20px;
+    }
+
+    .contactBox p {
+        font-size: 14px;
+    }
+
+    .cerinta {
+        font-size: 20px;
+    }
+
+    .title-op {
+        display: none;
+    }
+}
+
+#terminalContainer {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.terminal {
+    position: relative;
+    width: 80%;
+    /* Adjust the width as needed */
+    height: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.terminalInput {
+    flex: 1;
+    /* Expand to fill remaining space */
+    height: 60px;
+    padding-left: 30px;
+    color: white;
+    font-family: monospace;
     font-size: 20px;
+    background-color: #0D1117;
+    border-radius: 20px;
+    border: 0.5px #202225 solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.inputSymbol {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+}
+
+#testButton {
+    background-color: #39FF14;
+    color: white;
+    font-family: monospace;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 25px;
 }
