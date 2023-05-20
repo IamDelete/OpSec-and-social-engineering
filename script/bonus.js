@@ -13,7 +13,7 @@ button.addEventListener('click', (event) => {
   } else {
     inputs[1].classList.add('gresit');
   }
-  if (inputs[2].value === 'target:@i_am.delete -fwingsemail') {
+  if (inputs[2].value === 'target:@i_am.delete -comments') {
     inputs[2].classList.add('corect');
   } else {
     inputs[2].classList.add('gresit');
