@@ -8,7 +8,7 @@ button.addEventListener('click', (event) => {
   } else {
     inputs[0].classList.add('gresit');
   }
-  if (inputs[1].value === 'target:@i.am_delete -followers') {
+  if (inputs[1].value === 'target:@i_am.delete -followers') {
     inputs[1].classList.add('corect');
   } else {
     inputs[1].classList.add('gresit');
